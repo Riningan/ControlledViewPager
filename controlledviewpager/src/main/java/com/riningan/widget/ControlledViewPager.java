@@ -18,11 +18,6 @@ import android.view.MotionEvent;
  */
 
 public class ControlledViewPager extends ViewPager {
-    public enum SwipeDirection {
-        All, LEFT, RIGHT, NONE
-    }
-
-
     private float mInitialXValue = 0.0f;
     private SwipeDirection mDirection = SwipeDirection.All;
 
@@ -104,5 +99,10 @@ public class ControlledViewPager extends ViewPager {
         int state = typedArray.getInt(R.styleable.ControlledViewPager_swipe_direction, 0);
         mDirection = SwipeDirection.values()[state];
         typedArray.recycle();
+    }
+
+
+    public enum SwipeDirection {
+        All, LEFT, RIGHT, NONE
     }
 }

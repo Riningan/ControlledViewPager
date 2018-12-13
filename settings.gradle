@@ -1,1 +1,1 @@
-include ':sample', ':controlledviewpager'
+include ':sample', ':extendedviewpager'

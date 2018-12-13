@@ -1,4 +1,4 @@
-package com.riningan.controlledviewpager;
+package com.riningan.extendedviewpager;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
@@ -6,8 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.riningan.widget.ControlledViewPager;
+import com.riningan.widget.ExtendedViewPager;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,32 +15,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ControlledViewPager cvp = findViewById(R.id.cvp);
+        final ExtendedViewPager cvp = findViewById(R.id.cvp);
         cvp.setAdapter(new Adapter());
         cvp.setOffscreenPageLimit(3);
 
         findViewById(R.id.btnLockLeft).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cvp.setAllowedSwipeDirection(ControlledViewPager.SwipeDirection.RIGHT);
+                cvp.setAllowedSwipeDirection(ExtendedViewPager.SwipeDirection.RIGHT);
             }
         });
         findViewById(R.id.btnLockAll).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cvp.setAllowedSwipeDirection(ControlledViewPager.SwipeDirection.NONE);
+                cvp.setAllowedSwipeDirection(ExtendedViewPager.SwipeDirection.NONE);
             }
         });
         findViewById(R.id.btnUnlock).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cvp.setAllowedSwipeDirection(ControlledViewPager.SwipeDirection.All);
+                cvp.setAllowedSwipeDirection(ExtendedViewPager.SwipeDirection.All);
             }
         });
         findViewById(R.id.btnLockRight).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cvp.setAllowedSwipeDirection(ControlledViewPager.SwipeDirection.LEFT);
+                cvp.setAllowedSwipeDirection(ExtendedViewPager.SwipeDirection.LEFT);
             }
         });
     }

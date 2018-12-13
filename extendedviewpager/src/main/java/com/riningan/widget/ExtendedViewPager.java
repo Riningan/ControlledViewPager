@@ -11,22 +11,22 @@ import android.view.MotionEvent;
 
 /**
  * Created by Vadim Akhmarov on 07.12.2018.
- * Project ControlledViewPager
- * Classname ControlledViewPager
+ * Project ExtendedViewPager
+ * Classname ExtendedViewPager
  * Version 1.0
  * Copyright All rights reserved.
  */
 
-public class ControlledViewPager extends ViewPager {
+public class ExtendedViewPager extends ViewPager {
     private float mInitialXValue = 0.0f;
     private SwipeDirection mDirection = SwipeDirection.All;
 
 
-    public ControlledViewPager(@NonNull Context context) {
+    public ExtendedViewPager(@NonNull Context context) {
         super(context);
     }
 
-    public ControlledViewPager(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public ExtendedViewPager(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
     }
@@ -95,8 +95,8 @@ public class ControlledViewPager extends ViewPager {
     }
 
     private void init(AttributeSet attrs) {
-        TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.ControlledViewPager, 0, 0);
-        int state = typedArray.getInt(R.styleable.ControlledViewPager_swipe_direction, 0);
+        TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.ExtendedViewPager, 0, 0);
+        int state = typedArray.getInt(R.styleable.ExtendedViewPager_swipe_direction, 0);
         mDirection = SwipeDirection.values()[state];
         typedArray.recycle();
     }

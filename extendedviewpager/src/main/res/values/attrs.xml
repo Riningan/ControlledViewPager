@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ControlledViewPager">
+    <declare-styleable name="ExtendedViewPager">
         <attr name="swipe_direction" format="enum" >
             <enum name="all" value="0"/>
             <enum name="left" value="1"/>

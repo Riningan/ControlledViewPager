@@ -1,4 +1,4 @@
-# ControlledViewPager
+# ExtendedViewPager
 	
 Extended ViewPager with swipe disabling options
 
@@ -15,7 +15,7 @@ Add dependencies in build.gradle of your module.
 
 ```groovy
 dependencies {
-  implementation 'com.riningan.widget:controlledviewpager:1.0'
+  implementation 'com.riningan.widget:extendedviewpager:1.0'
 }
 ```
 
@@ -23,7 +23,7 @@ XML
 -----
 
 ```xml
-<com.riningan.widget.ControlledViewPager
+<com.riningan.widget.ExtendedViewPager
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:swipe_direction="all" />
@@ -49,8 +49,8 @@ JAVA
 -----
 
 ```java
-ControlledViewPager controlledViewPager = findViewById(R.id.controlledViewPager);
-controlledViewPager.setAllowedSwipeDirection(ControlledViewPager.SwipeDirection direction);
+ExtendedViewPager extendedViewPager = findViewById(R.id.extendedViewPager);
+extendedViewPager.setAllowedSwipeDirection(ExtendedViewPager.SwipeDirection direction);
 ```
 
 ```java

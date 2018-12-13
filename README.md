@@ -10,7 +10,7 @@ DEMO
 USAGE
 ---
 
-Using ControlledViewPager in your application.
+Using ExtendedViewPager in your application.
 Add dependencies in build.gradle of your module.
 
 ```groovy

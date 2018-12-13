@@ -1,4 +1,4 @@
-package com.riningan.controlledviewpager;
+package com.riningan.extendedviewpager;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.riningan.widget.ExtendedViewPager;
 
 

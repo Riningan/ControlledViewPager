@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ControlledViewPager</string>
+    <string name="app_name">ExtendedViewPager</string>
     <string name="lock_left">Lock Left</string>
     <string name="lock_all">Lock All</string>
     <string name="unlock">Unlock</string>

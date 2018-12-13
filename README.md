@@ -1,5 +1,7 @@
 # ExtendedViewPager
 	
+[ ![Download](https://api.bintray.com/packages/riningan/AndroidMaven/ExtendedViewPager/images/download.svg) ](https://bintray.com/riningan/AndroidMaven/ExtendedViewPager/_latestVersion)	
+	
 Extended ViewPager with swipe disabling options
 
 DEMO

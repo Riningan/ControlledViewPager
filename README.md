@@ -17,7 +17,7 @@ Add dependencies in build.gradle of your module.
 
 ```groovy
 dependencies {
-  implementation 'com.riningan.widget:extendedviewpager:1.1'
+  implementation 'com.riningan.widget:extendedviewpager:1.2'
 }
 ```
 

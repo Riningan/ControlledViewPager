@@ -1,16 +1,5 @@
 apply plugin: 'com.android.library'
 
-android {
-    compileSdkVersion 28
-
-    defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 2
-        versionName "1.1"
-    }
-}
-
 ext {
     bintrayRepo = 'AndroidMaven'
     bintrayName = 'ExtendedViewPager'
@@ -24,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/Riningan/ExtendedViewPager'
     gitUrl = 'https://github.com/Riningan/ExtendedViewPager.git'
 
-    libraryVersion = '1.1'
+    libraryVersion = '1.2'
 
     developerId = 'Riningan'
     developerName = 'Vadim Akhmarov'
@@ -33,6 +22,16 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 3
+        versionName '1.2'
+    }
 }
 
 dependencies {

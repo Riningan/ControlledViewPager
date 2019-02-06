@@ -9,6 +9,9 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import com.riningan.widget.extendedviewpager.R;
+
+
 /**
  * Created by Vadim Akhmarov on 07.12.2018.
  * Project ExtendedViewPager
